@@ -291,7 +291,7 @@ blockquote personality {
 	/* Stay in place */
 	z-index: 1000;
 	/* Sit on top */
-	padding-top: 40px;
+	padding-top: 20px;
 	/* Location of the box */
 	left: 0;
 	top: 0;
@@ -311,9 +311,9 @@ blockquote personality {
 	margin: auto;
 	display: block;
 	width: 80%;
-	max-height: 720px;
+	max-height: 650px;
 	/* Max height for the enlarged image */
-	max-width: 500px;
+	max-width: 450px;
 	/* Max width for the enlarged image */
 }
 
