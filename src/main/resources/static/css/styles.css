@@ -80,7 +80,6 @@ footer {
 	width: 100%;
 }
 
-
 .contact-container {
 	background: rgba(0, 0, 0, 0.5);
 	/* Semi-transparent background */
@@ -88,8 +87,8 @@ footer {
 	/* Rounded corners */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 	/* Subtle shadow effect */
-	padding: 20px;
-	width: 50%;
+	padding: 30px;
+	max-width: 800px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -98,6 +97,7 @@ footer {
 	align-items: center;
 	/* Center content horizontally */
 	margin: auto;
+	margin-bottom: 10px;
 }
 
 .contact-container h2 {
@@ -144,14 +144,13 @@ footer {
 }
 
 .contact-details {
-	margin-top: 20px;
+	margin-top: 30px;
 	color: #fff;
 }
 
 .contact-details p {
 	margin: 5px 0;
 }
-
 
 .video-container {
 	display: flex;
@@ -292,7 +291,7 @@ footer {
 }
 
 .quotes {
-	margin: 15px auto;
+	margin: 10px auto;
 	max-width: 800px;
 	text-align: left;
 	padding: 10px;
