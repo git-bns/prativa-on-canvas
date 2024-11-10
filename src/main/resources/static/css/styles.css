@@ -182,59 +182,6 @@ footer {
 }
 
 
-.quote-container {
-	display: block;
-	padding: 2rem;
-	position: relative;
-	text-align: center;
-	/* Center the quote boxes */
-}
-
-.quote {
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
-	padding: 1.5rem;
-	margin: 20px auto;
-	/* Center each quote */
-	text-align: center;
-	animation: float 10s infinite;
-	transform: translateY(0);
-	width: 500px;
-	/* Set a specific width for the quote box */
-}
-
-.quote img {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-}
-
-blockquote {
-	margin: 1rem 0;
-	font-size: 1.2rem;
-}
-
-blockquote personality {
-	margin-top: 1rem;
-	font-size: 1rem;
-	font-style: italic;
-}
-
-@keyframes float {
-	0% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-20px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-}
-
 .image-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -332,4 +279,107 @@ blockquote personality {
 	color: #bbb;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.intro {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: justify;
+	/* Justify the text */
+	padding-left: 20px;
+	/* Add padding on the left side */
+	padding-right: 20px;
+	/* Add padding on the right side */
+}
+
+.intro p {
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+
+.quotes {
+	margin: 40px auto;
+	max-width: 800px;
+	text-align: left;
+	padding-left: 20px;
+	/* Add padding on the left side */
+	padding-right: 20px;
+	/* Add padding on the right side */
+}
+
+.quotes h3 {
+	margin-bottom: 20px;
+}
+
+.quote {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	/* Gradient background */
+	padding: 10px;
+	border-radius: 10px;
+	opacity: 0;
+	/* Initially hidden */
+	transform: translateX(-100%);
+	/* Initially off the screen */
+	animation: slideIn 1s ease-in-out forwards;
+	/* Slide in animation */
+}
+
+#quote1 {
+	animation-delay: 0s;
+}
+
+#quote2 {
+	animation-delay: 1s;
+}
+
+#quote3 {
+	animation-delay: 2s;
+}
+
+#quote4 {
+	animation-delay: 3s;
+}
+
+#quote5 {
+	animation-delay: 4s;
+}
+
+@keyframes slideIn {
+	to {
+		opacity: 1;
+		/* Fully visible */
+		transform: translateX(0);
+		/* Move to the original position */
+	}
+}
+
+.quote img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.quote p {
+	font-size: 1.1rem;
+	line-height: 1.5;
+	margin: 0;
+	color: #fff;
+	/* White text color for better contrast */
+	font-family: Georgia, serif;
+	/* Handwritten font style */
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
