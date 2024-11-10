@@ -284,28 +284,22 @@ footer {
 .intro {
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 20px;
-	text-align: justify;
-	/* Justify the text */
-	padding-left: 20px;
-	/* Add padding on the left side */
-	padding-right: 20px;
-	/* Add padding on the right side */
+	padding: 10px;
+
 }
 
 .intro p {
 	font-size: 1.2rem;
 	line-height: 1.6;
+	text-align: justify;
+	/* Justify the text */
 }
 
 .quotes {
 	margin: 40px auto;
 	max-width: 800px;
 	text-align: left;
-	padding-left: 20px;
-	/* Add padding on the left side */
-	padding-right: 20px;
-	/* Add padding on the right side */
+	padding: 10px;
 }
 
 .quotes h3 {
