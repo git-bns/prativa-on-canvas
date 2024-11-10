@@ -23,10 +23,10 @@ RUN mvn package -Dmaven.test.skip=true
 # If the user changes pom.xml to have a different version, or artifactId, this will find the jar
 RUN grep version target/maven-archiver/pom.properties | cut -d '=' -f2 >.env-version
 RUN grep artifactId target/maven-archiver/pom.properties | cut -d '=' -f2 >.env-id
-RUN mv target/$(cat .env-id)-$(cat .env-version).jar target/export-run-artifact.jar
+RUN mv target/$(cat .env-id)-$(cat .env-version).jar target/prativa-on-canvas.jar
 
 FROM registry.access.redhat.com/ubi8/openjdk-17-runtime:1.15-1.1682053056
-COPY --from=builder /home/jboss/project/target/export-run-artifact.jar  /deployments/export-run-artifact.jar
-EXPOSE 8081
-ENTRYPOINT ["/opt/jboss/container/java/run/run-java.sh", "--server.port=8081"]
+COPY --from=builder /home/jboss/project/target/prativa-on-canvas.jar  /deployments/prativa-on-canvas.jar
+EXPOSE 8080
+ENTRYPOINT ["/opt/jboss/container/java/run/run-java.sh", "--server.port=8080"]
 

@@ -1,23 +1,23 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: my-java-springboot
+  name: prativa-on-canvas
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: java-springboot-app
+      app: prativa-on-canvas
   template:
     metadata:
       labels:
-        app: java-springboot-app
+        app: prativa-on-canvas
     spec:
       containers:
-        - name: my-java-springboot
+        - name: prativa-on-canvas
           image: java-springboot-image:latest
           ports:
             - name: http
-              containerPort: 8081
+              containerPort: 8080
               protocol: TCP
           resources:
             requests:
@@ -27,12 +27,12 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: my-java-springboot-svc
+  name: prativa-on-canvas
 spec:
   ports:
-    - name: http-8081
-      port: 8081
+    - name: http-8080
+      port: 8080
       protocol: TCP
-      targetPort: 8081
+      targetPort: 8080
   selector:
-    app: java-springboot-app
+    app: prativa-on-canvas

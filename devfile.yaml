@@ -1,11 +1,11 @@
 schemaVersion: 2.2.0
 metadata:
-  name: java-springboot
+  name: prativa-on-canvas
   version: 1.2.1
   attributes:
-    alpha.dockerimage-port: 8081
-  displayName: Spring Boot®
-  description: Spring Boot® using Maven
+    alpha.dockerimage-port: 8080
+  displayName: Prativa on Canvas
+  description: Prativa on Canvas using Spring Boot® and Maven
   icon: https://raw.githubusercontent.com/devfile-samples/devfile-stack-icons/main/spring.svg
   tags:
     - Java
@@ -35,8 +35,8 @@ components:
     kubernetes:
       uri: deploy.yaml
       endpoints:
-        - name: http-8081
-          targetPort: 8081
+        - name: http-8080
+          targetPort: 8080
           path: /
           secure: true
 commands:
