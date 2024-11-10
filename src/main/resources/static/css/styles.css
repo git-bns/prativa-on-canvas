@@ -281,22 +281,18 @@ footer {
 	cursor: pointer;
 }
 
-.intro {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 10px;
-
-}
-
 .intro p {
 	font-size: 1.2rem;
 	line-height: 1.6;
 	text-align: justify;
 	/* Justify the text */
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 10px;
 }
 
 .quotes {
-	margin: 40px auto;
+	margin: 15px auto;
 	max-width: 800px;
 	text-align: left;
 	padding: 10px;
