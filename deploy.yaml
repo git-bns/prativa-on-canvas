@@ -23,6 +23,22 @@ spec:
             requests:
               memory: "180Mi"
               cpu: "10m"
+          livenessProbe:
+            httpGet:
+              path: /health       # Replace with the liveness endpoint path of your app
+              port: 8080
+            initialDelaySeconds: 15  # Delay before starting liveness checks
+            periodSeconds: 20        # Frequency of liveness checks
+            timeoutSeconds: 5        # Time to wait for a liveness response
+            failureThreshold: 3      # Retry count before considering as unhealthy
+          readinessProbe:
+            httpGet:
+              path: /ready          # Replace with the readiness endpoint path of your app
+              port: 8080
+            initialDelaySeconds: 5   # Delay before starting readiness checks
+            periodSeconds: 10        # Frequency of readiness checks
+            timeoutSeconds: 3        # Time to wait for a readiness response
+            failureThreshold: 3      # Retry count before considering as not ready
 ---
 kind: Service
 apiVersion: v1
