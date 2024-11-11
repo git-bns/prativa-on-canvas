@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bn">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>চিত্রকর্ম - প্রতিভার ক্যানভাস</title>
+      <link rel="stylesheet" href="/css/styles.css">
+      <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
+      <script src="/scripts/modal.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="logo">
+            <a href="/bn"><img src="/icons/logo.png" alt="প্রতিভার ক্যানভাস লোগো"></a>
+            <h1>প্রতিভার ক্যানভাস</h1>
+            <div class="language-toggle">
+                <a href="/home" id="toggleEN">EN</a> &nbsp|&nbsp <a href="/bn/home" id="toggleBN">বাংলা</a>
+            </div>
+         </div>
+         <nav>
+            <ul>
+               <li><a href="/bn/home">শুরু</a></li>
+               <li><a href="/bn/paintings">চিত্রকর্ম</a></li>
+               <li><a href="/bn/videos">ভিডিও</a></li>
+               <li><a href="/bn/contact">যোগাযোগ</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section id="paintings">
+            <div class="content">
+               <h1>আমার চিত্রকর্ম</h1>
+               <div class="image-container">
+                  <div class="image-box">
+                     <img src="/arts/art-1.jpg" alt="চিত্র ১ এর বর্ণনা" class="clickable-image" onClick="enlargeImage(this);">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+                  <div class="image-box">
+                     <img src="/arts/art-2.jpg" alt="চিত্র ২ এর বর্ণনা" class="clickable-image" onClick="enlargeImage(this);">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+                  <div class="image-box">
+                     <img src="/arts/art-3.jpg" alt="চিত্র ৩ এর বর্ণনা" class="clickable-image" onClick="enlargeImage(this);">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+                  <div class="image-box">
+                     <img src="/arts/art-4.jpg" alt="চিত্র ৪ এর বর্ণনা" class="clickable-image" onClick="enlargeImage(this);">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+                  <div class="image-box">
+                     <img src="/arts/art-5.jpg" alt="চিত্র ৫ এর বর্ণনা" class="clickable-image" onClick="enlargeImage(this);">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+                  <div class="image-box">
+                     <img src="/arts/art-6.jpg" alt="চিত্র ৬ এর বর্ণনা" class="clickable-image" onClick="enlargeImage(this);">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+                  <div class="image-box">
+                     <img src="/arts/art-7.jpg" alt="চিত্র ৭ এর বর্ণনা" class="clickable-image" onClick="enlargeImage(this);">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+                  <div class="image-box">
+                     <img src="/arts/art-8.jpg" alt="চিত্র ৮ এর বর্ণনা" class="clickable-image" onClick="enlargeImage(this);">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+                  <!-- Enlarged Image Modal -->
+                  <div id="modal" class="modal">
+                     <span class="close" onClick="closeImage();">&times;</span>
+                     <img class="modal-content" id="modal-img">
+                     <div class="watermark">প্রতিভার ক্যানভাস</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <p>&copy; ২০২৪ প্রতিভার ক্যানভাস</p>
+      </footer>
+   </body>
+</html>
