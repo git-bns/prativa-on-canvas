@@ -62,12 +62,12 @@ nav ul li a {
     align-items: center;
     margin-left: auto;
     margin-right: 20px;
+    font-size: 9px;
 }
 
 .language-toggle a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
 }
 
 .language-toggle a:hover {
@@ -131,6 +131,12 @@ footer {
 .contact-container label {
 	color: #fff;
 	text-align: left;
+	margin-bottom: 5px;
+}
+
+.contact-container label p {
+	color: #fff;
+	text-align: justify;
 	margin-bottom: 5px;
 }
 

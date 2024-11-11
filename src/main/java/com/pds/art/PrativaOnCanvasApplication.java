@@ -43,7 +43,7 @@ public class PrativaOnCanvasApplication {
     @PostMapping("/connect")
     public String connect() {
 	System.out.println("English | User sent a query.");
-        return "contact";
+        return "connect";
     }
 
     @GetMapping("/bn")
@@ -79,7 +79,7 @@ public class PrativaOnCanvasApplication {
     @PostMapping("/bn/connect")
     public String connectBn() {
 	System.out.println("Bengali | User sent a query.");
-        return "bn/contact";
+        return "bn/connect";
     }
 
     public static void main(String[] args) {
