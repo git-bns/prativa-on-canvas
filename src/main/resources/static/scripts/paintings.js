@@ -1,4 +1,3 @@
-// Step 1: Array of image file names (assuming they are all in the 'img' folder)
 const imageFiles = [
 	"art-1.jpg",
 	"art-2.jpg",
@@ -11,12 +10,13 @@ const imageFiles = [
 ];
 
 // Function to display images
-function loadPaintings() {
-
-	const container = document.getElementById("image-container");
+function renderPaintings() {
+	const container = document.querySelector(".image-container");
+	container.innerHTML = ""; // Clear any existing content
+	
 	imageFiles.forEach(fileName => {
 		let imageLocation = `/arts/${fileName}`;
-		
+
 		const imageBox = document.createElement("div");
 		imageBox.classList.add("image-box");
 
@@ -47,6 +47,9 @@ function loadPaintings() {
 		}
 	});
 }
+
+// Call renderPaintings when the page loads
+document.addEventListener("DOMContentLoaded", renderPaintings);
 
 // Define the function to be called on click
 function enlargeImage(imgSource) {
