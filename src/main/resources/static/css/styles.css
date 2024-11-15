@@ -82,14 +82,14 @@ main {
 }
 
 section {
-	padding: 2rem;
+	padding: 0 2rem;
 	text-align: center;
 }
 
 footer {
 	background-color: rgba(0, 0, 0, 0.8);
 	text-align: center;
-	padding: 1rem;
+	padding: 0 1rem;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -172,6 +172,31 @@ footer {
 
 .contact-details p {
 	margin: 5px 0;
+}
+
+.contact-details .address::before,
+.contact-details .email::before,
+.contact-details .mobile::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	margin-right: 8px;
+	/* Space between icon and text */
+	color: #ffffff;
+}
+
+.contact-details .address::before {
+	content: "\f015";
+	/* Home icon */
+}
+
+.contact-details .email::before {
+	content: "\f0e0";
+	/* Envelope icon */
+}
+
+.contact-details .mobile::before {
+	content: "\f095";
+	/* Phone icon */
 }
 
 .video-container {
@@ -324,7 +349,7 @@ footer {
 .quote {
 	display: flex;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-top: 20px;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	/* Gradient background */
 	padding: 10px;
