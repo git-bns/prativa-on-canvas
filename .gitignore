@@ -1,8 +1,5 @@
-.classpath
-.project
-.settings
-target
-.odo
-.idea
-.DS_Store
+# Builds
+build
 
+# Maven build
+target
