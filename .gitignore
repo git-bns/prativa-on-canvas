@@ -2,4 +2,11 @@
 build
 
 # Maven build
+
 target
+
+.classpath
+
+.settings
+
+.project
